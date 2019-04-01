@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 云米模块字符串 -->
+    <string name="umimg">umimg</string>
+    <string name="umtitle">Mi Intelligenter Wasserkocher</string>
+    <string name="um_offline">Offline</string>
+    <string name="um_status_close">Leerlauf</string>
+    <string name="um_status_heating">Heizen</string>
+    <string name="um_status_keep_warm">Warmhalten</string>
+    <string name="um_status_keep_warm_temp_down">Kühlen</string>
+    <string name="um_status_abnormal">Fehler</string>
+
+    <string name="um_error_not">Normal</string>
+    <string name="um_error_heat">Heizfehler</string>
+    <string name="um_error_sensor">Sensorfehler</string>
+    <string name="um_error_parch">Verdampfen</string>
+    <string name="um_error_unknow">Unbekannter Fehler</string>
+
+    <string name="um_set_custom_temp">Wassertemperatur individuell einstellen</string>
+    <string name="um_string_mi_directions">Verwendung</string>
+
+    <string name="um_string_errord1">1. Die Heizröhre ist nicht verbunden, weil das Relais die Verbindung nicht unterbrechen bzw. den Stromkreis nicht schließen kann. Melden Sie sich bei mi.com an, um Hilfe bei der Fehlerbehebung zu bekommen.</string>
+    <string name="um_string_errord2">1. Der Grund könnte sein, dass der Stromkreis des Sensors offen/kurzgeschlossen ist. Melden Sie sich bei mi.com an, um Hilfe bei der Fehlerbehebung zu bekommen.</string>
+    <string name="um_string_errord3">1. Möglicherweise wärmt der Wasserkocher ohne Wasser auf oder das gesamte Wasser ist verdampft. \nLösung: Füllen Sie eine geeignete Wassermenge ein und erhitzen sie diese erneut. Versuchen Sie es mehrere Male. Wenn das Problem fortbesteht, melden Sie sich bei mi.com an, um Hilfe bei der Fehlerbehebung zu bekommen.</string>
+
+    <string name="title_keep_warm_time">Warmhaltezeit</string>
+    <string name="desc_keep_warm">Warmhalten</string>
+    <string name="util_keep_warm">Std.</string>
+    <string name="time_seekbar_min_desc">1 Stunde</string>
+    <string name="time_seekbar_max_desc">12 Stunden</string>
+
+    <string name="title_keep_warm_temp">Wassertemperatur</string>
+    <string name="icon_more">Mehr</string>
+    <string name="icon_custom">Angepasst</string>
+    <string name="title_avoid_boil_repeat">Nicht erneut kochen</string>
+
+    <string name="um_keep_warm_boil">Auf eingestellte Temperatur herunterkühlen</string>
+    <string name="um_keep_warm_not_boil">Auf eingestellte Temperatur aufwärmen</string>
+    <string name="um_boil_model_set_desc">Drücken Sie die Aufwärmtaste, um das Wasser aufzuwärmen.</string>
+
+    <string name="text_tea">Weißer Tee</string>
+    <string name="text_coffee">Kaffee</string>
+    <string name="text_milk">Milchpulver</string>
+    <string name="text_cereal">Babyreismehl</string>
+    <string name="text_protiotics">Probiotische Latwerge</string>
+
+    <string name="text_scene_tea">Zum Kochen von weißem Tee geeignet</string>
+    <string name="text_scene_coffee">Zum Kaffeekochen geeignet</string>
+    <string name="text_scene_milk">Zur Milchzubereitung geeignet</string>
+    <string name="text_scene_cereal">Zum Anrühren von Reismehl geeignet</string>
+    <string name="text_scene_protiotics">Probiotische Latwerge</string>
+
+    <string name="um_scene_selected">Diese Aufgabe war bereits vorhanden.</string>
+
+    <string name="text_scene_common_use">Üblich</string>
+    <string name="text_scene_all">Alle</string>
+    <string name="title_choose_replace_scene">Wählen Sie eine Aufgabe zum Austauschen.</string>
+    <string name="um_desc_offline">Gerät ist nicht verbunden</string>
+    <string name="um_desc_boiling">Kocht</string>
+
+    <string name="um_common_setting">Allgemeine Einstellungen</string>
+    <string name="um_device_info">Geräteinfo</string>
+    <string name="um_mac_address">MAC-Adresse</string>
+
+    <string name="title_kettle_lift_up">Erweitertes Aufwärmen</string>
+    <string name="text_kettle_lift_up_desc">Halten Sie das Wasser warm, nachdem Sie den Wasserkocher aufgenommen und auf seine Basis zurückgestellt haben (45℃ oder höher)</string>
+    <string name="text_kettle_lift_up_upgrade_tips">Tippen Sie auf das Symbol in der oberen rechten Ecke, um die Firmware zu aktualisieren, und probieren Sie dann die Funktion \„Erweitertes Aufwärmen\“ aus.</string>
+    <string name="text_kettle_lift_up_tips">Schalten Sie den Warmhaltemodus ab, um Überhitzung und Hardwareschäden durch eine unzureichende Wassermenge zu vermeiden. Der Warmhaltemodus funktioniert nur bei einer Zimmertemperatur von 4-35 ℃.</string>
+    <string name="button_cancel">Abbrechen</string>
+    <string name="button_confirm">OK</string>
+
+    <string name="um_keep_warm_boil_string1">Halten Sie die Temperatur nach dem Kochen bei</string>
+    <string name="um_keep_warm_boil_string2">℃</string>
+    <string name="um_keep_warm_not_boil_string1">Erhitzen Sie das Wasser und halten Sie es warm bei</string>
+    <string name="um_keep_warm_not_boil_string2">℃</string>
+    <string name="text_key_keep_warn">Warmhalten</string>
+    <string name="toast_idle_temp_set">Drücken Sie die Warmhaltetaste am Wasserkocher, um den Vorgang zu starten.</string>
+    <string name="toast_keep_warm_temp_set">Der Wasserkocher heizt das Wasser jetzt auf. Möchten Sie die Temperatur ändern?</string>
+    <string name="um_status_keep_warm1">Warmgehalten für</string>
+    <string name="um_status_keep_warm_h">Std.</string>
+    <string name="um_status_keep_warm_m">Min.</string>
+    <string name="um_setup_fail">Einstellungen konnten nicht individuell angepasst werden.</string>
+    <string name="um_desc_keep_warm_time">Warmhalten</string>
+    <string name="um_desc_keep_warm_not_boil">Erhitzen auf</string>
+    <string name="um_desc_keep_warm_boil">Nach dem Kochen warmhalten</string>
+    <string name="um_button_confirm">OK</string>
+    <string name="um_text_hour">Std.</string>
+    <string name="um_text_notime">Ohne Angabe</string>
+    <string name="um_start_string">Drücken Sie die Einstelltaste zum Starten.</string>
+    <string name="um_text_common_set">Allgemeine Einstellungen</string>
+    <string name="um_title_mode_title">Einstellungen zum Warmhalten</string>
+    <string name="um_title_direct_keep_warm_setting">Stellen Sie den Wasserkocher zurück und drücken Sie die Taste, um sofort warmzuhalten, wenn die Temperatur auf bis zu 5℃ unter die eingestellte Gradzahl sinkt</string>
+    <string name="um_text_direct_keep_warm_setting">Stellen Sie den Wasserkocher zurück, nachdem Sie ihn von der Basis genommen haben. Der Wasserkocher hält das Wasser sofort warm, ohne es erneut aufzukochen, wenn die Temperatur (auf bis zu 5 ℃) unter die eingestellte Gradzahl sinkt</string>
+    <string name="um_working_status">Aktueller Status</string>
+    <string name="um_reset_custom_temp">Auf Standardtemperatur zurücksetzen</string>
+    <string name="um_boiling_string">Kochen</string>
+    <string name="um_had_complete">Fertig</string>
+
+    <string name="warm_memory_note_title">Achtung</string>
+    <string name="um_desc_outtime">Zeitüberschreitung der Verbindung</string>
+    <string name="title_set">Einstellungen</string>
+    <string name="share">Freigeben</string>
+    <string name="edit_custom">Bearbeiten</string>
+    <string name="device_connecting">Verbindung wird hergestellt \u2026</string>
+
+    <string name="setting_help">Hilfe</string>
+    <string name="setting_feedback">Feedback</string>
+    <string name="setting_rename">Gerätename ändern</string>
+    <string name="setting_location">Standorte verwalten</string>
+    <string name="setting_sharedevice">Gerät freigeben</string>
+    <string name="setting_update">Nach Firmware-Aktualisierungen suchen</string>
+    <string name="setting_delete">Verbindung trennen</string>
+    <string name="setting_addtodesk">Zum Startbildschirm hinzufügen</string>
+    <string name="update_currentversion">Aktuelle Version</string>
+    <string name="update_latestversion">Neueste Version</string>
+    <string name="update_islatest">Firmware ist aktuell</string>
+    <string name="update_ing">Wird aktualisiert \u2026</string>
+    <string name="update_tips">Aktualisierung wird ausgeführt. Schalten Sie das Gerät nicht aus und verwenden Sie es nicht, bevor der Vorgang abgeschlossen ist.</string>
+    <string name="update_success">Erfolgreich aktualisiert</string>
+    <string name="update_fail">Aktualisierung nicht möglich</string>
+    <string name="update_begin">Start</string>
+    <string name="bluetooth_error">Bluetooth ist deaktiviert</string>
+    <string name="um_string_errord100">1. Der Wasserkocher ist möglicherweise nicht an das Stromnetz angeschlossen. \n2. Das Bluetooth des Handys ist möglicherweise nicht aktiviert. \n3. Das Handy befindet sich zu weit weg vom Wasserkocher. \n\n Lösung: Aktivieren Sie Bluetooth, verbinden Sie den Wasserkocher mit dem Stromnetz, versuchen Sie, Handy und Wasserkocher näher zueinander zu bewegen, gehen Sie zurück zu der Liste \„Meine Geräte\“ und versuchen Sie es erneut.</string>
+    <string name="um_license_title">Nutzungsvereinbarung</string>
+    <string name="um_license_have_read">Ich habe\u0020 gelesen.</string>
+    <string name="um_license_agree">Zustimmen und fortfahren</string>
+
+    <string name="um_license_name">Nutzungsvereinbarung für den Mi Intelligenter Wasserkocher</string>
+    <string name="um_conceal_name">Datenschutzrichtlinie für den Mi Intelligenter Wasserkocher</string>
+
+
+</resources>

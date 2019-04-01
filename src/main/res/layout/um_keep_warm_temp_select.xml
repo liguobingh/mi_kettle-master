@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:paddingTop="@dimen/set_item_padding_top"
+    >
+    
+    <ImageView 
+        android:id="@+id/icon"
+        android:src="@drawable/icon_temp_meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+		android:layout_marginLeft="@dimen/set_item_padding_left"
+        />
+    <TextView 
+        android:id="@+id/title"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_title_color"
+        android:textSize="@dimen/set_title_size"
+        android:text="@string/title_keep_warm_temp"
+        />
+     <TextView 
+        android:id="@+id/desc"
+		 android:layout_alignParentLeft="true"
+		 android:layout_marginLeft="50dp"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_desc_color"
+        android:textSize="@dimen/set_desc_size"
+        />
+     
+     
+     <LinearLayout 
+         android:id="@+id/scene_layout"
+         android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:layout_below="@id/desc"
+	     android:layout_marginTop="20dp"
+		 android:layout_marginLeft="40dp"
+		 android:layout_marginRight="@dimen/set_item_padding_right"
+         >
+      	<RadioGroup
+      	    android:id="@+id/scene_radiogroup"
+      	    android:layout_weight="3"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:gravity="center_vertical"
+	        >
+	            <RadioButton
+	                android:id="@+id/custom_scene0"
+	                android:button="@null"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="90 ℃"
+	                android:textSize="12sp" 
+	                android:drawableTop="@drawable/um_scene_coffee_main"
+	                android:textColor="@drawable/um_scene_text_color"
+	                android:drawablePadding="8dp"
+	                android:gravity="center_horizontal"/>
+	            
+	            <RadioButton
+	                android:id="@+id/custom_scene1"
+	                android:button="@null"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content" 
+	                android:layout_weight="1"
+	                android:text="80 ℃"
+	                android:textSize="12sp" 
+	                android:drawableTop="@drawable/um_scene_tea_main"
+	                android:textColor="@drawable/um_scene_text_color"
+	                android:drawablePadding="8dp"
+	                android:gravity="center_horizontal"
+	                />
+	      	 <RadioButton
+	                android:id="@+id/custom_scene2"
+	                android:button="@null"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content" 
+	                android:layout_weight="1"
+	                android:text="50 ℃"
+	                android:textSize="12sp" 
+	                android:drawableTop="@drawable/um_scene_milk_main"
+	                android:textColor="@drawable/um_scene_text_color"
+	                android:drawablePadding="8dp"
+	                android:gravity="center_horizontal"
+	                />      
+	            
+	    </RadioGroup>
+    	<RadioButton
+            android:id="@+id/scene_more"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:text="@string/icon_custom"
+            android:textColor="#96928D"
+            android:textSize="12sp" 
+            android:drawableTop="@drawable/icon_scene_custom"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal"
+            />  
+         
+     </LinearLayout>
+     
+
+	 <RelativeLayout
+		  android:id="@+id/seekbar_layout"
+          android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+		 android:layout_below="@id/scene_layout"
+         >
+	         <SeekBar 
+		        android:id="@+id/seekbar"
+		        android:layout_centerVertical="true"
+		        style="@style/Widget.SeekBar.NormalTemp"
+		        android:max="50"
+				 android:layout_alignParentLeft="true"
+				 android:layout_marginLeft="40dp"
+				 android:layout_marginRight="17dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" 
+	       	/> 
+	       	
+	       <TextView 
+	            android:layout_alignParentLeft="true" 
+		        android:layout_below="@id/seekbar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+		        android:textColor="@color/text_desc_color"
+		        android:textSize="@dimen/set_desc_size"
+			   android:layout_marginLeft="50dp"
+		        android:text="40 ℃"
+		        />
+	       <TextView 
+	            android:layout_alignParentRight="true"
+			   android:layout_marginRight="@dimen/set_item_padding_right"
+		        android:layout_below="@id/seekbar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+		        android:textColor="@color/text_desc_color"
+		        android:textSize="@dimen/set_desc_size"
+		        android:text="90 ℃"
+		        />
+     </RelativeLayout>
+
+	<View
+		android:id="@+id/line"
+		android:layout_below="@id/seekbar_layout"
+		android:layout_marginTop="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="0.6dp"
+		android:background="@color/seekbar_backgroud_color"
+		/>
+
+	<LinearLayout
+		android:id="@+id/more_layout"
+		android:layout_below="@id/line"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			android:text="@string/icon_more"
+			android:textColor="@color/text_title_color"
+			android:textSize="@dimen/set_title_size"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/arraw"
+			android:layout_marginLeft="8dp"
+			android:src="@drawable/um_arrow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+	</LinearLayout>
+
+</RelativeLayout>

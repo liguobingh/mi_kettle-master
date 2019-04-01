@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/icon_kettle_warn"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#666666"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_kettle_lift_up_tips"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_common_border"
+        android:layout_width="221dp"
+        android:layout_height="42dp">
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_width="1dp"
+            android:id="@+id/devide"
+            android:layout_height="match_parent"
+            android:background="#f8f8f7"></View>
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/button_cancel"
+            android:textColor="#666666"
+            android:layout_alignParentLeft="true"
+            android:textSize="15sp"
+            android:text="@string/button_cancel"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/devide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/button_confirm"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/devide"
+            android:layout_alignParentRight="true"
+            android:text="@string/button_confirm"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

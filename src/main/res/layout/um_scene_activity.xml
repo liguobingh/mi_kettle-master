@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/std_titlebar_device_white"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/text_scene_common_use"
+            android:textColor="@color/text_desc_color"
+            android:textSize="@dimen/font_size_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_below="@id/seekbar_layout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/seekbar_backgroud_color"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/um_radiobutton_height">
+
+            <RadioButton
+                android:id="@+id/custom_scene0"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="90℃"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/um_scene_coffee_sub"
+                android:textColor="@drawable/um_scene_press_text_color"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/custom_scene1"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="80℃"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/um_scene_tea_sub"
+                android:textColor="@drawable/um_scene_press_text_color"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"
+                />
+            <RadioButton
+                android:id="@+id/custom_scene2"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="50℃"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/um_scene_milk_sub"
+                android:textColor="@drawable/um_scene_press_text_color"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/text_scene_all"
+            android:textColor="@color/text_desc_color"
+            android:textSize="@dimen/font_size_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_below="@id/seekbar_layout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/seekbar_backgroud_color"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/um_radiobutton_height">
+
+            <RadioButton
+                android:id="@+id/scene0"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="90℃"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/um_scene_coffee_sub"
+                android:textColor="@drawable/um_scene_press_text_color"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/scene1"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="80℃"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/um_scene_tea_sub"
+                android:textColor="@drawable/um_scene_press_text_color"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"
+                />
+            <RadioButton
+                android:id="@+id/scene2"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="50℃"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/um_scene_milk_sub"
+                android:textColor="@drawable/um_scene_press_text_color"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/um_radiobutton_height">
+
+            <RadioButton
+                android:id="@+id/scene3"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="90℃"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/um_scene_coffee_sub"
+                android:textColor="@drawable/um_scene_press_text_color"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/scene4"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="80℃"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/um_scene_tea_sub"
+                android:textColor="@drawable/um_scene_press_text_color"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

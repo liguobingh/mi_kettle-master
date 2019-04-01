@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.viomi.kettle">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application>
+        <!-- 支持插件的最低版本，必须 -->
+        <meta-data android:name="minPluginSdkApiVersion" android:value="27" />
+        <!-- 设备model，必须 -->
+        <meta-data android:name="model" android:value="yunmi.kettle.v1|yunmi.kettle.v2|yunmi.kettle.v3|yunmi.kettle.v4|yunmi.kettle.v5" />
+        <!-- 设备处理消息入口，必须 -->
+        <meta-data android:name="message_handler" android:value="com.viomi.kettle.UMKettleMessageReceiver" />
+        <!-- 开发者Id, 必须 -->
+        <meta-data android:name="MiHomeDeveloperId" android:value="id_308264272" />
+        <!-- 支持的运行平台,必须 -->
+        <meta-data android:name="MiHomePlatform" android:value="phone" />
+        <!-- 是否支持widget显示,非必须 -->
+        <meta-data android:name="MiHomeSupportWidget" android:value="false" />
+    </application>
+</manifest>

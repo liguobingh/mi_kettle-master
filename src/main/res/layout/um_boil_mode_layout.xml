@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/set_item_padding_left"
+    android:paddingRight="@dimen/set_item_padding_right">
+    
+   <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" 
+        android:gravity="center_vertical"
+
+        >
+        	    <RadioButton
+	                android:id="@+id/boil"
+	                android:button="@null"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="match_parent"
+	                android:text="@string/um_keep_warm_boil"
+	                android:textColor="@drawable/um_model_text_color"
+	                android:textSize="12sp"
+					android:singleLine="false"
+	                android:drawableLeft="@drawable/um_keep_warm_boil" 
+	                android:drawablePadding="4dp"
+					android:layout_gravity="left"
+					android:gravity="center_vertical"/>
+
+
+		   	<RadioButton
+						android:id="@+id/notBoil"
+						android:button="@null"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="match_parent"
+						android:text="@string/um_keep_warm_not_boil"
+						android:singleLine="false"
+						android:textColor="@drawable/um_model_text_color"
+						android:textSize="12sp"
+						android:drawableLeft="@drawable/um_keep_warm_not_boil"
+						android:drawablePadding="4dp"
+						android:layout_gravity="right"
+						android:gravity="center_vertical"
+						/>
+
+    </RadioGroup>
+    <View 
+        android:id="@+id/line0"
+        android:layout_below="@id/radiogroup"
+        android:layout_width="match_parent"
+		android:background="@color/seekbar_backgroud_color"
+        android:layout_height="0.6dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/boil_model_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line0"
+        >
+            <TextView
+		        android:id="@+id/boil_set_title"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="15dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/text_title_color"
+		        android:textSize="@dimen/set_title_size"
+		        android:text="@string/title_avoid_boil_repeat"
+		      ></TextView>
+
+
+		     <com.viomi.kettle.view.UMSwitchButton
+		        android:id="@+id/mode_switch"
+		        android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+		        />
+
+				<TextView
+					android:id="@+id/boil_set_desc"
+					android:layout_below="@id/boil_set_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/text_desc_color"
+					android:textSize="@dimen/set_desc_size"
+					android:gravity="left"
+					android:layout_alignLeft="@id/boil_set_title"
+					android:text="@string/um_boil_model_set_desc"
+					android:layout_toLeftOf="@id/mode_switch"
+					/>
+
+				<View
+					android:visibility="invisible"
+					android:id="@+id/line2"
+					android:layout_below="@id/boil_set_desc"
+					android:layout_marginTop="14dp"
+					android:layout_width="match_parent"
+					android:layout_height="0.6dp"
+					android:background="@color/seekbar_backgroud_color"
+					/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

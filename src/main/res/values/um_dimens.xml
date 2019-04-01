@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- 标题栏尺寸 -->
+    <dimen name="um_title_size">50dip</dimen>
+    <dimen name="um_title_status_margintop">-13dip</dimen>
+    <dimen name="um_title_status_textsize">12sp</dimen>
+    <!-- chart -->
+    <dimen name="um_chart_line_width">10dip</dimen>
+    <!-- chart anim -->
+    <dimen name="um_chart_anim_circle">6dip</dimen>
+    <dimen name="um_chart_layoutmsg_marginbottom">100dip</dimen>
+    <dimen name="um_line_height">0.11dip</dimen>
+
+    <dimen name="um_down_size">17dip</dimen>
+    
+    <dimen name="um_bottom_setting_width">126dip</dimen>
+
+    <dimen name="set_title_size">14sp</dimen>
+    <dimen name="set_desc_size">12sp</dimen>
+    <dimen name="set_item_padding">27dp</dimen>
+    <dimen name="set_item_padding_left">27dp</dimen>
+    <dimen name="set_item_padding_right">27dp</dimen>
+    <dimen name="set_item_padding_top">26dp</dimen>
+    <dimen name="set_item_padding_bottom">20dp</dimen>
+    <dimen name="um_rotext_textsize">72dip</dimen>
+    <dimen name="um_radiobutton_height">120dip</dimen>
+</resources>

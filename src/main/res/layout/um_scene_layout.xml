@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioButton
+        android:id="@+id/replace_scene0"
+        android:button="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="90℃"
+        android:textSize="12sp"
+        android:drawableTop="@drawable/um_scene_coffee_sub"
+        android:textColor="@drawable/um_scene_press_text_color"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"/>
+
+    <RadioButton
+        android:id="@+id/replace_scene1"
+        android:button="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="80℃"
+        android:textSize="12sp"
+        android:drawableTop="@drawable/um_scene_tea_sub"
+        android:textColor="@drawable/um_scene_press_text_color"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"
+        />
+    <RadioButton
+        android:id="@+id/replace_scene2"
+        android:button="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="50℃"
+        android:textSize="12sp"
+        android:drawableTop="@drawable/um_scene_milk_sub"
+        android:textColor="@drawable/um_scene_press_text_color"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"
+        />
+</LinearLayout>

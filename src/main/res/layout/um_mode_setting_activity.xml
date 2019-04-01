@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include layout="@layout/um_view_title_bar_setting" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/item00"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <com.xiaomi.smarthome.common.ui.widget.SwitchButton
+                    android:id="@+id/mode_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="5dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/um_title_direct_keep_warm_setting"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/um_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffd0d0d1" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="60dp"
+            android:includeFontPadding="false"
+            android:text="@string/um_text_direct_keep_warm_setting"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:background="@color/tip_background_color" 
+    android:padding="0.0dip" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	    <ImageView 
+	        android:id="@+id/setting_enter_tip" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:src="@drawable/setting_enter_tip" 
+	        android:layout_alignParentBottom="true" 
+	        android:layout_alignParentLeft="true" 
+	        android:layout_marginBottom="68dp"
+	        android:layout_marginLeft="20dp"
+	        />
+	    
+	    	<ImageView 
+		        android:id="@+id/temp_time_set_tip" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:src="@drawable/temp_time_set_tip" 
+		        android:layout_alignParentBottom="true" 
+		        android:layout_alignParentRight="true" 
+		        android:layout_marginBottom="160dp"
+		        android:layout_marginRight="30dp"
+	        />
+
+</RelativeLayout>

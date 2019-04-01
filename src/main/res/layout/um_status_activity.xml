@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+    
+    
+    <LinearLayout
+        android:id="@+id/setting_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/um_bottom_setting_width"
+        android:background="#F8F8F7"
+        android:gravity="center"
+         >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_temp_set"
+            android:src="@drawable/um_button_setting"/>
+        
+    </LinearLayout>
+    
+       <RelativeLayout
+	        android:id="@+id/main_layout"
+	        android:layout_above="@id/setting_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+         >
+        	<include         
+			    android:id="@+id/title_bar"
+			    layout="@layout/std_titlebar_device_white"
+			    />
+	
+			<TextView
+		        android:id="@+id/title_status"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/title_bar"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/um_title_status_margintop"
+		        android:textColor="@color/text_color"
+		        android:textSize="@dimen/um_title_status_textsize" />
+
+
+            <RelativeLayout 
+                android:id="@+id/seekbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp"
+                android:layout_alignParentBottom="true"
+                >
+                <TextView 	
+                    android:id="@+id/seekbar_start_desc"	
+                    android:textColor="@color/seekbar_color"
+                    android:text="00:00"	
+                    android:textSize="@dimen/font_size_12sp"      
+                    android:layout_alignParentLeft="true"   
+                    android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"/>
+               <TextView 		
+                    android:id="@+id/seekbar_end_desc"	
+                    android:textColor="@color/seekbar_color"
+                    android:layout_alignParentRight="true"
+                    android:text="12:00"
+                    android:textSize="@dimen/font_size_12sp"    
+                    android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"/> 
+			        
+                 <SeekBar 
+			        android:id="@+id/time_seekbar"
+			        android:layout_toRightOf="@id/seekbar_start_desc"
+			        android:layout_toLeftOf="@id/seekbar_end_desc"
+			        android:paddingLeft="35dp"
+			        android:paddingRight="35dp"
+			        style="@style/Widget.SeekBar.Normal"
+			        android:max="120"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+	        	/> 
+	        	 
+            </RelativeLayout>
+            
+             <TextView 	
+                  android:id="@+id/keep_warm_desc"	
+                  android:layout_above="@id/seekbar_layout"
+                  android:textColor="@color/text_color1"
+                  android:text="@string/um_desc_keep_warm_time"	   
+                  android:textSize="@dimen/font_size_14sp"     
+                  android:gravity="center_horizontal"
+                  android:layout_marginBottom="18dp"
+                  android:layout_width="match_parent"
+	        	  android:layout_height="wrap_content"/> 
+
+
+             <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_above="@id/keep_warm_desc"
+			        android:layout_below="@id/title_bar">
+			
+	            <com.viomi.kettle.view.UMCircleProgress 
+	                android:id="@+id/progress"
+	                android:layout_width="match_parent"
+	                android:layout_height="270dip"
+					android:layout_centerVertical="true"
+	           		/>
+	            <TextView
+			        android:id="@+id/error_text"
+			        android:layout_below="@id/progress"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"
+			        android:paddingLeft="15dip"
+			        android:paddingRight="15dip"
+			        android:layout_marginTop="5dip"
+			        android:layout_marginBottom="5dip"
+			        android:background="@drawable/um_home_btn1"
+			        android:gravity="center"
+			        android:text="异常"
+					android:textColor="@color/white"
+			        android:textSize="14sp"
+			        android:visibility="gone"
+			        />
+			 </RelativeLayout>
+       </RelativeLayout>
+     
+
+
+	
+</RelativeLayout>

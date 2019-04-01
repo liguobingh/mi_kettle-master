@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F2F1"
+    android:orientation="vertical" >
+    
+	    <LinearLayout
+	        android:id="@+id/title_bar"
+	        android:layout_width="match_parent"
+	        android:layout_alignParentTop="true"
+	        android:layout_margin="15dp"
+	        android:orientation="horizontal"
+	        android:layout_height="27dip" >
+
+	        <ImageView
+	            android:id="@+id/back"
+	            android:layout_width="27dp"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center_vertical"
+	            android:contentDescription="返回"
+	            android:src="@drawable/um_back_round_normal" />
+	
+	        <TextView
+	            android:id="@+id/title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:ellipsize="end"
+	            android:maxLines="1"
+	            android:text="自定义"
+	            android:textSize="@dimen/title_text_size" />
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@color/white"
+	        android:orientation="vertical"
+	        >
+	      <ListView 
+	          android:id="@+id/list"
+	          android:layout_alignParentBottom="true"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:background="@color/white"
+		      android:cacheColorHint="#00000000"
+		      android:divider="#ffd0d0d1"
+		      android:dividerHeight="0dip"
+		      android:listSelector="#00000000"
+		      android:scrollbars="none"/>  
+	        
+	    </LinearLayout>
+
+</LinearLayout>
